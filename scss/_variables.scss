@@ -1,0 +1,48 @@
+
+
+
+// Layout
+
+$Mobile: 375px;
+$tablet: 700px;
+$big-tablet: 900px;
+$Desktop: 1440px;
+
+// Colors
+
+/// Primary
+
+$Gradient-start: hsl(6, 100%, 80%);
+$Gradient-end: hsl(335, 100%, 65%);
+
+/// Neutral
+
+$Blue-200: hsl(243, 100%, 93%);
+$Grayish-Blue: hsl(229, 7%, 55%);
+$Blue-850: hsl(228, 56%, 26%);
+$Blue-950: hsl(229, 57%, 11%);
+
+// Typography
+
+/// Body Copy
+
+$font-size: 14px;
+
+@mixin display-flex($justify-content, $align-items, $flex-flow, $gap) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-flow: $flex-flow;
+  gap: $gap;
+}
+
+@mixin display-grid($cols, $col-width, $gap) {
+  display: grid;
+  grid-template-columns: repeat($cols, $col-width);
+  gap: $gap;
+}
+
+@font-face {
+  font-family: 'raleway';
+  src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
